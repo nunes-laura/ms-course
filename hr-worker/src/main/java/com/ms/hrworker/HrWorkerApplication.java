@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class HrWorkerApplication {
 
 	public static void main(String[] args) {
+		System.getProperties().put("server.port", 8001);
 		SpringApplication.run(HrWorkerApplication.class, args);
 	}
 
